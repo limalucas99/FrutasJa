@@ -26,6 +26,7 @@ margin-left: 14px;
 
 .navbar-brand{
     background-color: #ffcc99;
+    min-width: 9rem; /* não pode ter uma largura menor que essa */
     text-align: right;
     color: white; /*tirar navbar-light e bg-light para o bootstrap não sobrescrever meu CSS*/
     padding-top: 1rem;
@@ -67,9 +68,17 @@ margin-left: 14px;
 }
 
 .btn{
-    justify-content: center;
+   background-color: inherit;
+   outline-color: red;
+   color: rgba(255,255,255,.7);
+   border: 1px solid rgba(255,255,255,.3);
 }
 
+.btn:hover{
+   background-color: inherit;
+   border: 1px solid rgba(255,255,255,.5);
+   color: rgba(255,255,255,1);
+}
 
 
 
