@@ -1,7 +1,7 @@
 /* Estilização da NAV */
 
 .navbar-nav {
-text-align: center;
+
 margin-left: 14px;
 }
 
@@ -43,7 +43,7 @@ margin-left: 14px;
 
 /* Fim estilização da NAV */
 
-/* Jumbotrom */
+/* Jumbotron */
 
 .jumbotron{
     background: url(imagens/teste.jpg);
@@ -51,6 +51,8 @@ margin-left: 14px;
     background-position: right center; /*centraliza a imagem*/
     padding: 10rem 2rem; /* aumentando o preenchimento da imagem(fazendo ela ocupar mais espaço) */ 
     align-items: center;
+    margin-bottom: 0; /* Para a div subir*/
+   /* height: 90vh;*/
     
 }
 
@@ -80,7 +82,31 @@ margin-left: 14px;
    color: rgba(255,255,255,1);
 }
 
+.navbar .fas{
+    color:#ffcc99;
+    margin: 11px 4px 3px 10px;
+}
 
+.fas:hover{
+    color:#ff9933;
+    cursor: pointer;
+}
+
+.navbar .fa-user{
+    border-left: 1px solid #ff9933;
+    padding-left: 15px;
+}
+
+/* fim Jumbotron*/
+
+
+
+
+/*#separacao{
+    background-color: #ffcc99;
+    width: 100%;
+    height: 80px;
+}*/
 
 
 
