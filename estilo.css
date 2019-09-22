@@ -49,6 +49,8 @@ margin-left: 14px;
     background-size: cover; /* faz a imagem cobrir o background de maneira mais correta*/
     background-position: right center; /*centraliza a imagem*/
     padding: 10rem 2rem; /* aumentando o preenchimento da imagem(fazendo ela ocupar mais espaço) */ 
+    align-items: center;
+    
 }
 
 .jumbotron .lead{
