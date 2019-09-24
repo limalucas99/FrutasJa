@@ -38,23 +38,30 @@ margin-left: 14px;
 }
 
 .navbar-brand:hover{
-   color: #fff2e6; 
+   color: #fff2e6;
+   cursor: default;
 }
 
 /* Fim estilização da NAV */
 
 /* Jumbotron */
 
+
+.index{
+    background: url(imagens/jumbo-index.jpg);
+}
+
+
 .jumbotron{
-    background: url(imagens/teste.jpg);
     background-size: cover; /* faz a imagem cobrir o background de maneira mais correta*/
     background-position: right center; /*centraliza a imagem*/
     padding: 10rem 2rem; /* aumentando o preenchimento da imagem(fazendo ela ocupar mais espaço) */ 
     align-items: center;
     margin-bottom: 0; /* Para a div subir*/
-   /* height: 90vh;*/
-    
+    height: 90vh;  
 }
+
+
 
 .jumbotron .lead{
     color: white;
@@ -90,6 +97,11 @@ margin-left: 14px;
 .fas:hover{
     color:#ff9933;
     cursor: pointer;
+}
+
+.fa-user:hover{
+    cursor: default !important;
+    color:#ffcc99 !important;
 }
 
 .navbar .fa-user{
