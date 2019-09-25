@@ -25,7 +25,7 @@ margin-left: 14px;
 
 
 .navbar-brand{
-    background-color: #ff8080;
+    background-color: #008000;
     min-width: 9rem; /* não pode ter uma largura menor que essa */
     text-align: right;
     color: white; /*tirar navbar-light e bg-light para o bootstrap não sobrescrever meu CSS*/
@@ -38,7 +38,7 @@ margin-left: 14px;
 }
 
 .navbar-brand:hover{
-   color: #ffcccc;
+   color: #e6ffe6;
 }
 
 /* Fim estilização da NAV */
@@ -46,7 +46,7 @@ margin-left: 14px;
 /* Jumbotron */
 
 .frutas{
-    background: url(imagens/jumbo-frutas.jpg);
+    background: url(imagens/jumbo-verduras.jpg);
 }
 
 .jumbotron{
@@ -179,39 +179,3 @@ body{
   position: absolute;
   font-size: .7rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

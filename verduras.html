@@ -2,40 +2,47 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    
-    <!--Linkando com bootstrap-->
+     <!--Linkando com bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
     <!--Linkando com Font Awesome-->
     <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
     
     <!--linkando com arquivo CSS -->
-    <link rel="stylesheet" href="estilo-index.css">
+    <link rel="stylesheet" href="estilo-verduras.css">
+    
+    <!--linkando com jQuery-->
+    <script
+	src="https://code.jquery.com/jquery-3.3.1.js"
+	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	crossorigin="anonymous"></script>
     
     <!--pesquisar como colocar um ícone no título da página -->
     <title>ícone FrutasJá</title>
 </head>
 <body>
+
+
 <!--Menu-->
 <nav class="navbar navbar-expand-lg">
-  <a class="navbar-brand col-3" href="#">FrutasJá</a>
+  <a class="navbar-brand col-3" href="index.html">FrutasJá</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="frutas.html">
+        <a class="nav-link" href="frutas.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Frutas
         </a>
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Verduras
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Legumes
         </a>
       </li>
@@ -64,30 +71,35 @@
 <!--Fim menu-->
 
 <!--Jumbotron-->
-<div class="jumbotron jumbotron-fluid index">
+<div class="jumbotron jumbotron-fluid frutas">
   <div class="container text-center"> <!-- text-center  = centraliza o botão no meio do jumbo-->
-    <p class="display-4">Encontre as melhores frutas</p>
-    <p class="lead">Frutas de qualidade, com preços que cabem no seu bolso.</p>
-     <a href="#" class="btn btn-outline-light btn-lg mt-5">Conheça nossos produtos</a>
+    <p class="display-4 mt-5">Experimente nossos produtos</p>
+    <p class="lead mt-3">Verduras com frescor inigualável.</p>
+     <a href="#" class="btn btn-outline-light btn-lg mt-5">Descubra</a>
   </div>
 </div>   
-<!--fim Jumbotron-->   
-  
-<!--Div de separação-->
-<div id="separacao">
-</div>
-<!-- Fim div de separação-->
-   
-   
-         
-           
-             
-               
-                 
-                   
-                      
+<!--fim Jumbotron--> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>     
 </body>
 </html>
