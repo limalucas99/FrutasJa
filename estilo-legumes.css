@@ -5,20 +5,22 @@
 margin-left: 14px;
 }
 
+
 .ativa{
     color: black !important;
 }
 
+
 .nav-link{
     display: block;
     text-transform: uppercase;
-    color: #ff8080;
+    color: #800080;
     font-weight: 600;
     /*Formatar aqui também*/
 }
 
 .nav-link:hover{
-   color: #e60000;  
+   color: #4d004d;  
 }
 
 .navbar{
@@ -29,7 +31,7 @@ margin-left: 14px;
 
 
 .navbar-brand{
-    background-color: #ff8080;
+    background-color: #800080;
     min-width: 9rem; /* não pode ter uma largura menor que essa */
     text-align: right;
     color: white; /*tirar navbar-light e bg-light para o bootstrap não sobrescrever meu CSS*/
@@ -42,7 +44,7 @@ margin-left: 14px;
 }
 
 .navbar-brand:hover{
-   color: #ffcccc;
+   color: #ffe6ff;
 }
 
 /* Fim estilização da NAV */
@@ -50,7 +52,7 @@ margin-left: 14px;
 /* Jumbotron */
 
 .frutas{
-    background: url(imagens/jumbo-frutas.jpg);
+    background: url(imagens/jumbo-legumes.jpg);
 }
 
 .jumbotron{
@@ -92,22 +94,22 @@ margin-left: 14px;
 }
 
 .navbar .fas{
-    color:#ff8080;
+    color:#800080;
     margin: 11px 4px 3px 10px;
 }
 
 .fas:hover{
-    color:#e60000;
+    color:#4d004d;
     cursor: pointer;
 }
 
 .fa-user:hover{
     cursor: default !important;
-    color:#ff8080 !important;
+    color: #800080 !important;
 }
 
 .navbar .fa-user{
-    border-left: 1px solid #ff6666;
+    border-left: 1px solid #660066;
     padding-left: 15px;
 }
 
@@ -117,7 +119,7 @@ margin-left: 14px;
 
 .produtos{
     height:100px;
-    background-color: #ff8080;
+    background-color: #4d004d;
     padding-top: 2rem;
     color: white;
     text-transform: uppercase;
@@ -173,7 +175,7 @@ margin-left: 14px;
 
 
 body{
-    background-color: #f9ecec;
+    background-color: #f2efff;
 }
 
 #detalhes{
@@ -184,39 +186,3 @@ body{
   position: absolute;
   font-size: .7rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

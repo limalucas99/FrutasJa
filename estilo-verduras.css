@@ -5,6 +5,10 @@
 margin-left: 14px;
 }
 
+.ativa{
+    color: black !important;
+}
+
 .nav-link{
     display: block;
     text-transform: uppercase;
