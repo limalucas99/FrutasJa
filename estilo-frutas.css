@@ -169,12 +169,13 @@ margin-left: 14px;
 
 
 body{
-    background-color: #f0f0f5;
+    background-color: #f9ecec;
 }
 
 #detalhes{
   display:none;
   height: 12px;
+  color: white;
   background-color: none;
   position: absolute;
   font-size: .7rem;
