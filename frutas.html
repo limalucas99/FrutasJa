@@ -20,7 +20,7 @@
     <!--pesquisar como colocar um ícone no título da página -->
     <title>ícone FrutasJá - Frutas</title>
 </head>
-<body>
+<body id="home">
 <!--Menu-->
 <nav class="navbar navbar-expand-lg fixed-top">
   <a class="navbar-brand col-3" href="index.html">FrutasJá</a>
@@ -30,12 +30,12 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link ativa" href="#">
+        <a class="nav-link ativa barra-animada" href="#home">
           Frutas
         </a>
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="verduras.html">
           Verduras
         </a>
       </li>
@@ -73,13 +73,13 @@
   <div class="container text-center"> <!-- text-center  = centraliza o botão no meio do jumbo-->
     <p class="display-4 mt-5">Experimente nossos produtos</p>
     <p class="lead mt-3">Sinta o irresistível sabor das nossas frutas.</p>
-     <a href="#" class="btn btn-outline-light btn-lg mt-5">Descubra</a>
+     <a href="#produtos" class="btn btn-outline-light btn-lg mt-5 barra-animada">Descubra</a>
   </div>
 </div>   
 <!--fim Jumbotron--> 
 
 <!--Div Produtos -->
-<div class="produtos mt-5 text-center h1">
+<div class="produtos mt-5 text-center h1" id="produtos">
     <h2 class="container h3">Produtos em destaque</h2>
 </div>
 <!-- Fim div produtos -->
@@ -91,7 +91,7 @@
 	
 	
 	<section class="section-cards mt-5 text-center">
-	    <div class="container">
+	   <a href="index.html"><div class="container">
 	        <div class="row">
 	            <div class="card col-md-3">
 	                <img src="imagens/cards-index/laranjas.jpg" class="card-img-top">
@@ -213,13 +213,49 @@
 	                </div>
 	            </div>
 	        </div>
-	    </div>
+	    </div></a>
 	</section> <!-- section-cards-->            
         
-            
+    <!-- Div detalhes -->      
     <div id="detalhes">
         clique para mais detalhes
-    </div>                
+    </div> 
+     <!-- Fim Div detalhes -->        
+    
+    
+    <!-- Section-Quote-->
+<section class="section-quote">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 offset-1"> <!--offset é usado para pular colunas na grid-->
+                  <blockquote class="blockquote">
+                  <p class="mb-0">As frutas são ricas em vitaminas, minerais, antioxidantes, fibras e água. Em geral melhoram o funcionamento intestinal, sistema imunológico, previnem câncer, doenças cardiovasculares e degenerativas. A ingestão média indicada para os brasileiros é de 3 a 5 porções por dia.</p>
+                  <footer class="blockquote-footer">Juliana Monteiro Senra, Nutricionista,<cite title="Título da fonte"> 2015
+                  </cite></footer>
+                </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Fim Section-Quote-->
+ 
+<!--Footer-->     
+<footer class="footer">
+	    <div class="container">          
+	        <div class="row">
+            <div class="col-md-2">
+                 <p class="logo-text">FrutasJá</p>
+            </div>
+            <div class="col-md-7">
+                <p>Nam mi enim, auctor non ultricies a, fringilla eu risus. Praesent vitae lorem et elit tincidunt accumsan suscipit eu libero. Maecenas diam est, venenatis vitae dui in, vestibulum mollis arcu. Donec eu nibh tincidunt, dapibus sem eu, aliquam dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum consectetur commodo eros, vitae laoreet lectus aliq</p>
+            </div>
+            <div class="col-md-3">
+                <p>aliquam dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum consectetur commodo eros, vitae laoreet lectus aliq</p>
+            </div>	  
+	        </div>
+	    </div>
+	</footer>
+<!-- Fim Footer-->                
 
 
 
@@ -234,43 +270,7 @@ crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
   
-<script>
-    
-
-$('.card').on( "mousemove mouseleave", function( event ) {
-       var divid = "#detalhes";
-   if(event.type == "mouseleave"){
-      $(divid).hide();
-   }else{
-      var divid_height = $(divid).height(); // altura da div
-      var scrolTop = $(window).scrollTop(); // scroll da janela
-      $(divid).css({
-         top: event.clientY-divid_height+scrolTop,
-         left: event.clientX+5
-      }).show();
-   }
- })
-    
- $('.card').on('click',function(){
-     window.location="index.html";
-     //window.open("http://livecoding.tv");
- })
- 
-//fim div detalhes
-//--------------------------------------------------------------------------------------------------//
- 
-    let navLink = $('.barra-animada');//seleciono o que eu quero que tenha scroll animado
-    
-    navLink.on('click',function(e){
-        e.preventDefault(); //tiro o comportamento padrão, que é ir direto pra onde cliquei
-          let href = $(this).attr('href');
-          let alvo = $(href);
-          let pos = alvo.position().top;
-          
-          $('html, body').animate({scrollTop: pos}, 1500);
-    })
-    
-</script>
+<script src="main.js"></script>   
          
             
                   

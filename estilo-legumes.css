@@ -204,7 +204,18 @@ body{
     color: #454e51;
 }
 
+.section-cards a{
+    color: black;
+}
 
+.section-cards a:hover{
+    text-decoration: none;
+}
+
+.section-cards img{
+    width: 284px;
+    height: 180px;
+}
 
 
 

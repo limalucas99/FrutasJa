@@ -32,17 +32,17 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="frutas.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link" href="frutas.html">
           Frutas
         </a>
       </li>
        <li class="nav-item">
-        <a class="nav-link ativa barra-animada" href="#home" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link ativa barra-animada" href="#home">
           Verduras
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link" href="legumes.html">
           Legumes
         </a>
       </li>
@@ -93,7 +93,7 @@
 	
 	
 	<section class="section-cards mt-5 text-center">
-	    <div class="container">
+	   <a href="index.html"><div class="container">
 	        <div class="row">
 	             <div class="card col-md-3">
 	                <img src="imagens/cards-index/repolho.jpg" class="card-img-top">
@@ -166,14 +166,49 @@
 	                </div>
 	            </div>
 	        </div>
-	    </div>
+           </div></a>
 	</section> <!-- section-cards-->            
         
-            
+    <!-- Div detalhes -->      
     <div id="detalhes">
         clique para mais detalhes
-    </div>                
-
+    </div> 
+     <!-- Fim Div detalhes -->        
+    
+    
+    <!-- Section-Quote-->
+<section class="section-quote">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 offset-1"> <!--offset é usado para pular colunas na grid-->
+                  <blockquote class="blockquote">
+                  <p class="mb-0">As verduras e os legumes são importantes fontes de carboidratos, fibras, água e vitaminas. As folhas das verduras contêm clorofila, que limpa e oxigena o sangue. As de cor mais intensa (verde escura) são abundantes em ácido fólico, importante antianêmico, além de serem boas fontes de cálcio, fósforo e ferro.</p>
+                  <footer class="blockquote-footer">Dra. Elisabete Fernandes Almeida,<cite title="Título da fonte"> 2011
+                  </cite></footer>
+                </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Fim Section-Quote-->
+ 
+<!--Footer-->     
+<footer class="footer">
+	    <div class="container">          
+	        <div class="row">
+            <div class="col-md-2">
+                 <p class="logo-text">FrutasJá</p>
+            </div>
+            <div class="col-md-7">
+                <p>Nam mi enim, auctor non ultricies a, fringilla eu risus. Praesent vitae lorem et elit tincidunt accumsan suscipit eu libero. Maecenas diam est, venenatis vitae dui in, vestibulum mollis arcu. Donec eu nibh tincidunt, dapibus sem eu, aliquam dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum consectetur commodo eros, vitae laoreet lectus aliq</p>
+            </div>
+            <div class="col-md-3">
+                <p>aliquam dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum consectetur commodo eros, vitae laoreet lectus aliq</p>
+            </div>	  
+	        </div>
+	    </div>
+	</footer>
+<!-- Fim Footer-->                
 
 
 
@@ -187,48 +222,9 @@ crossorigin="anonymous"></script>
 
 
 
+<script src="main.js"></script>   
 
 
-
-<script>
-    
-
-$('.card').on( "mousemove mouseleave", function( event ) {
-       var divid = "#detalhes";
-   if(event.type == "mouseleave"){
-      $(divid).hide();
-   }else{
-      var divid_height = $(divid).height(); // altura da div
-      var scrolTop = $(window).scrollTop(); // scroll da janela
-      $(divid).css({
-         top: event.clientY-divid_height+scrolTop,
-         left: event.clientX+5
-      }).show();
-   }
- })
-    
-
- $('.card').on('click',function(){
-     window.location="index.html";
-     //window.open("http://livecoding.tv");
- })
-    
-//fim div detalhes
-//--------------------------------------------------------------------------------------------------//
- 
-    let navLink = $('.barra-animada');//seleciono o que eu quero que tenha scroll animado
-    
-    navLink.on('click',function(e){
-        e.preventDefault(); //tiro o comportamento padrão, que é ir direto pra onde cliquei
-          let href = $(this).attr('href');
-          let alvo = $(href);
-          let pos = alvo.position().top;
-          
-          $('html, body').animate({scrollTop: pos}, 1500);
-    })
- 
-    
-</script>
          
             
 

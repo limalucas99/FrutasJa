@@ -184,3 +184,54 @@ body{
   position: absolute;
   font-size: .7rem;
 }
+
+
+.section-quote footer{
+    color: rgba(255,255,255,0.5);
+}
+
+.section-quote{
+    background-color: #008000;
+    padding: 12px 2px;
+    color: rgba(255,255,255,.8);
+    text-align: center;
+}
+
+.footer{
+    background-color: white;
+    padding: 50px 0 250px;
+    color: #454e51;
+}
+
+.section-cards a{
+    color: black;
+}
+
+.section-cards a:hover{
+    text-decoration: none;
+}
+
+.section-cards img{
+    width: 284px;
+    height: 180px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
