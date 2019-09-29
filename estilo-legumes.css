@@ -186,3 +186,25 @@ body{
   position: absolute;
   font-size: .7rem;
 }
+
+.section-quote{
+    background-color: #4d004d;
+    padding: 12px 2px;
+    color: rgba(255,255,255,.8);
+    text-align: center;
+}
+
+.section-quote footer{
+    color: rgba(255,255,255,0.5);
+}
+
+.footer{
+    background-color: #ffe6ff;
+    padding: 50px 0 250px;
+    color: #454e51;
+}
+
+
+
+
+
