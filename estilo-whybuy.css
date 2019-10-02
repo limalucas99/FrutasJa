@@ -6,13 +6,13 @@ margin-left: 14px;
 .nav-link{
     display: block;
     text-transform: uppercase;
-    color: #ffcc99;
+    color: #33adff;
     font-weight: 600;
     /*Formatar aqui também*/
 }
 
 .nav-link:hover{
-   color: #ff9933;  
+   color: #005c99;  
 }
 
 .navbar{
@@ -31,7 +31,7 @@ input{
 }
 
 .navbar-brand{
-    background-color: #ffcc99;
+    background-color: #0099ff;
     min-width: 9rem; /* não pode ter uma largura menor que essa */
     text-align: right;
     color: white; /*tirar navbar-light e bg-light para o bootstrap não sobrescrever meu CSS*/
@@ -44,7 +44,7 @@ input{
 }
 
 .navbar-brand:hover{
-   color: #fff2e6;
+   color: #ccebff;
 }
 
 
@@ -53,12 +53,12 @@ input{
 }
 
 .navbar .fas{
-    color:#ffcc99;
+    color:#33adff;
     margin: 11px 4px 3px 10px;
 }
 
 .fas:hover{
-    color:#ff9933;
+    color:#005c99;
     cursor: pointer;
 }
 
@@ -73,11 +73,19 @@ input{
 }
 
 body{
-    background-color: #fff2e6;
+    background-color: white;
 }
 
 .footer{
-    background-color: white;
-    padding: 50px 0 250px;
+    background-color: #e6f5ff;
+    padding: 80px 0 250px;
     color: #454e51;
+}
+
+.titulo{
+  padding-top: 150px; /* Para a navbar para de sobrepor o conteúdo*/
+  color: #0099ff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
