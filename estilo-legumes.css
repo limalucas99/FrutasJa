@@ -23,6 +23,16 @@ margin-left: 14px;
    color: #4d004d;  
 }
 
+input{
+  width: 210px;
+  border-radius: 10px;
+  height: 25px;
+  margin-top: 7px;
+  margin-left: 15px;
+  color: rgba(0,0,0,.7);
+}
+
+
 .navbar{
     padding: 0; /* deixa a navbar sem espaços em branco em volta dela */
     background-color: white;

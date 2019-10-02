@@ -1,0 +1,83 @@
+.navbar-nav {
+
+margin-left: 14px;
+}
+
+.nav-link{
+    display: block;
+    text-transform: uppercase;
+    color: #ffcc99;
+    font-weight: 600;
+    /*Formatar aqui também*/
+}
+
+.nav-link:hover{
+   color: #ff9933;  
+}
+
+.navbar{
+    padding: 0; /* deixa a navbar sem espaços em branco em volta dela */
+    background-color: white;
+    box-shadow: 0 10px 12px rgba(0,0,0,.3);
+}
+
+input{
+  width: 210px;
+  border-radius: 10px;
+  height: 25px;
+  margin-top: 7px;
+  margin-left: 15px;
+  color: rgba(0,0,0,.7);
+}
+
+.navbar-brand{
+    background-color: #ffcc99;
+    min-width: 9rem; /* não pode ter uma largura menor que essa */
+    text-align: right;
+    color: white; /*tirar navbar-light e bg-light para o bootstrap não sobrescrever meu CSS*/
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: bold;
+    /*Usar f12 no google chrome para saber o que o bootstrap está sobrescrevendo quando algo não funcionar*/
+}
+
+.navbar-brand:hover{
+   color: #fff2e6;
+}
+
+
+.ativa{
+    color: black !important;
+}
+
+.navbar .fas{
+    color:#ffcc99;
+    margin: 11px 4px 3px 10px;
+}
+
+.fas:hover{
+    color:#ff9933;
+    cursor: pointer;
+}
+
+.fa-user:hover{
+    cursor: default !important;
+    color:#ffcc99 !important;
+}
+
+.navbar .fa-user{
+    
+    padding-left: 15px;
+}
+
+body{
+    background-color: #fff2e6;
+}
+
+.footer{
+    background-color: white;
+    padding: 50px 0 250px;
+    color: #454e51;
+}

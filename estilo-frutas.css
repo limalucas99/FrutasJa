@@ -17,6 +17,16 @@ margin-left: 14px;
     /*Formatar aqui também*/
 }
 
+input{
+  width: 210px;
+  border-radius: 10px;
+  height: 25px;
+  margin-top: 7px;
+  margin-left: 15px;
+  color: rgba(0,0,0,.7);
+}
+
+
 .nav-link:hover{
    color: #e60000;  
 }
