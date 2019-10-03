@@ -21,6 +21,17 @@ margin-left: 14px;
     box-shadow: 0 10px 12px rgba(0,0,0,.3);
 }
 
+@media screen and (max-width: 992px){
+    .navbar-nav{
+        margin-left: 2rem;
+        text-align: center;
+    }
+    
+    .nav-link{
+        border-bottom:  1px solid #0099ff;
+    }
+}
+
 input{
   width: 210px;
   border-radius: 10px;

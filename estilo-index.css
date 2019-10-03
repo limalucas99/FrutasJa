@@ -3,6 +3,7 @@
 .navbar-nav {
 
 margin-left: 14px;
+
 }
 
 .nav-link{
@@ -10,7 +11,19 @@ margin-left: 14px;
     text-transform: uppercase;
     color: #ffcc99;
     font-weight: 600;
+    
     /*Formatar aqui também*/
+}
+
+@media screen and (max-width: 992px){
+    .navbar-nav{
+        margin-left: 2rem;
+        text-align: center;
+    }
+    
+    .nav-link{
+        border-bottom:  1px solid #ffcc99;
+    }
 }
 
 .nav-link:hover{
@@ -282,6 +295,18 @@ body{
   margin-bottom: 90px;
   }
     
+}
+
+@media screen and (min-width: 992px){
+    .navbar-nav{
+        background-color: transparent;
+        margin-left: 2rem;
+    }
+    
+    .nav-link{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }
 
 @media screen and (max-width: 764px)
