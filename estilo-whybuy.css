@@ -147,6 +147,10 @@ figure.fotos:hover figcaption{
 	opacity:1;
 }
 
+.element-animate{
+    opacity: 0;
+    visibility: hidden;
+}
 
 
 

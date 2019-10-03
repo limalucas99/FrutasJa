@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!--Linkando com Font Awesome-->
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css"> 
+    <!--linkando com arquivo CSS -->
+    <link rel="stylesheet" href="estilo-index.css">
+    
+	<title>Cesta</title>
+</head>
+<body>
+	<!--Menu-->
+<nav class="navbar navbar-expand-lg fixed-top" read-only="true">
+  <a class="navbar-brand col-3 barra-animada" href="index.html">FrutasJá</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="frutas.html">
+          Frutas
+        </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="verduras.html">
+          Verduras
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="legumes.html">
+          Legumes
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="whybuy.html">Por que comprar conosco?</a>
+      </li>
+      <li class="nav-item">
+        <input type="search" maxlength="30">
+      </li>
+      <li class="nav-item">
+        <i class="fas fa-search pr-1 busca"></i>
+      </li>
+       <li class="nav-item cadastro">
+        <a class="nav-link log-in ml-2" href="#">Login | Cadastre-se</a>
+      </li>
+     
+    </ul>
+  </div>
+</nav>
+<!--Fim menu-->
+
+
+	<div class="container cesta">
+		<div class="row">
+		<div class="col-lg-8">  
+		  <h2>Minha cesta</h2>
+		  <p></p>            
+		  <table class="table table-hover">
+		    <thead>
+		      <tr>
+		        <th>Produto</th>
+		        <th>qtd</th>
+		        <th>preço</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      <tr>
+		        <td> <img class="cesta_imagem" src="imagens/slide_dan/orange-lima.jpg" alt="Second slide">
+		        	<font id="decricao"><p><i>Laranja lima com 50% de vitamina C,sem agrotóxicos</i>
+		        	</p> </font>
+		        </td>
+		        <td><select class="form-control select_qtd">
+		        	<option value="1"><p>1/kg</p></option>
+		        	<option value="2"><p>2/kg</p></option>
+		        	<option value="3"><p>3/kg</p></option>
+		        </select></td>
+		        <td><p>R$ 100,00 /kg</p></td>
+		      </tr>
+		      <tr>
+		        <td></td>
+		        <td></td>
+		        <td></td>
+		      </tr>
+		      <tr>
+		        <td></td>
+		        <td></td>
+		        <td></td>
+		      </tr>
+		    </tbody>
+		  </table>
+		  </div>
+		  <div class="col-lg-4 resumo col-md-7 col-sm-8" >
+		  	<h2 class="h3 h3_resumo" style="">Resumo do pedido</h2>
+		  	<p>subtotal(1 produto) R$ 10,00</p>
+		  	<hr class="hr">
+		  
+		  	<div class="centra_desc_btn col-lg-10 col-md-8 col-sm-9 col-7 " >
+		  		<h3>Total R$ 200</h3>
+		  		<button  class="btn-default btn "  id="btn_carrinho"  ><img src="imagens/icone_dan/iconecestasemfundo.png"  class="img_btn"/> <h3>CONTINUAR</h3></button>
+		  	</div>
+		  </div>
+		  </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
+</body>
+</html>
+<style type="text/css">
+	.resumo .centra_desc_btn{
+		float: left;
+    	text-align: center;
+    	
+    	margin-top: 4%;
+    	vertical-align: center;
+	}
+	.resumo{
+		
+		margin-top: 10%;
+		background-color:#d6c9bd36;
+    	border-radius: 4px;
+    	padding-bottom: 2%;
+
+	}
+	.resumo .h3_resumo{
+		font-weight: 400;
+		margin-top: 10%;
+
+	}
+	.h3_resumo p{
+			font-weight: 100;
+
+	}
+    
+    .cesta{
+        padding-top: 100px;
+    }
+    
+	.cesta_imagem{
+		height: 100px;
+		width: 100px;
+	}
+	.descricao{
+		vertical-align: inherit;
+		float: right;
+
+	}
+	.select_qtd{
+		width: 80px;
+
+	}
+	#btn_carrinho .img_btn{
+		height: 40px;
+		width: 20%;
+		z-index: 1;	
+		float: left;
+
+	}
+	.resumo #btn_carrinho{
+		/*text-align: center;*/
+		color: white;
+		height: 60px;
+		/*font-weight:300;*/
+		/*width: 50%;*/
+		background-color: #ffcc99;
+		/*margin-left: 25%;*/
+		padding: 1.5%;
+
+	}
+	
+</style>
