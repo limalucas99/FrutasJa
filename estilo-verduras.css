@@ -226,6 +226,10 @@ body{
 }
 
 
+.element-animate{
+    opacity: 0;
+    visibility: hidden;
+}
 
 
 

@@ -6,6 +6,9 @@
     <!--Linkando com bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
+   
+    <link rel="stylesheet" href="animate.css">
+    
     <!--Linkando com Font Awesome-->
     <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
     
@@ -68,8 +71,9 @@
 
 <!-- imagens -->
 
-<div class="container mt-5 text-center imagens">
+<div class="container mt-5 text-center imagens ">
     
+    <div class="element-animate" data-animate-effect="jackInTheBox">
     <h6>Frutas sempre frescas</h6>
     <figure class="fotos">
     <img src="imagens/motivo1.jpg"/>
@@ -77,7 +81,9 @@
     <h3>Trabalhamos com os melhores produtores de frutas do País, para sempre garantirmos que somente as melhores frutas cheguem à sua mesa.</h3>
     </figcaption>
     </figure>
+    </div>
     
+    <div class="element-animate" data-animate-effect="jackInTheBox">
     <h6>Entregas em horas</h6>
     <figure class="fotos">
     <img src="imagens/motivo2.jpg"/>
@@ -85,8 +91,9 @@
     <h3>Com um grande número de colaboradores, nossa entrega está entre as mais rápidas do mercado, sem desperdício do seu tempo, em poucas horas suas frutas já estarão ao seu dispor em sua casa.</h3>
     </figcaption>
     </figure>
+    </div>
     
-    
+    <div class="element-animate" data-animate-effect="jackInTheBox">
     <h6>Frutas livres de agrotóxicos</h6>
     <figure class="fotos">
     <img src="imagens/motivo3.jpg"/>
@@ -94,8 +101,9 @@
     <h3>Como zelamos pela sua saúde, trabalhamos somente com fornecedores de produtos orgânicos, livre dos malfeitores agrotóxicos.</h3>
     </figcaption>
     </figure>
+        </div>
     
-    
+    <div class="element-animate" data-animate-effect="jackInTheBox">
     <h6>O melhor preço do mercado</h6>
     <figure class="fotos">
     <img src="imagens/motivo4.jpg"/>
@@ -103,8 +111,9 @@
     <h3>Como conectamos você, consumidor final, ao produtor, eliminamos o maior número possível de intermediários na cadeia de produção para conseguir garantir para o cliente o melhor preço.</h3>
     </figcaption>
     </figure>
+        </div>
     
-    
+    <div class="element-animate" data-animate-effect="jackInTheBox">
     <h6>Entrega automatizada</h6>
     <figure class="fotos">
     <img src="imagens/motivo5.jpg"/>
@@ -112,7 +121,7 @@
     <h3>Para facilitar sua rotina, nossas entregas podem ser programadas semanalmente, otimizando seu tempo.</h3>
     </figcaption>
     </figure>
-    
+    </div>
     
 </div>
 
@@ -150,7 +159,11 @@ crossorigin="anonymous"></script>
          
            
 <script src="main.js"></script>                
-
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.paroller.js"></script>
+<script src="js/main.js"></script>
                    
 
 </body>

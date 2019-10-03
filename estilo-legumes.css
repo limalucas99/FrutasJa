@@ -227,5 +227,10 @@ body{
     height: 180px;
 }
 
+.element-animate{
+    opacity: 0;
+    visibility: hidden;
+}
+
 
 
