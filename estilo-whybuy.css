@@ -152,7 +152,92 @@ figure.fotos:hover figcaption{
     visibility: hidden;
 }
 
+.navbar-toggler{
+    color: blue;
+}
 
+.navbar-toggler:focus{ 
+    outline-color: white; /*Tirar a merda da cor que fica no hamburguer menu qdo clicam nele*/
+}
+
+@media screen and (max-width: 991px) and (min-width: 766px)
+{
+  
+     figure.fotos{
+	position:relative;
+	border: 8px solid white;
+	box-shadow: 1px 1px 4px black;
+	width: 550px;
+    margin-left: 200px;
+    margin-bottom: 100px;
+}
+    
+    figure.fotos figcaption h3{
+    padding-top: 50px;
+    font-size: 1.9rem;
+}
+    .imagens{
+        margin-left: 3px;
+    }
+    
+    .imagens h6{
+        margin-left: 250px;
+    }
+    
+}
+
+
+@media screen and (max-width: 1200px) and (min-width: 992px)
+{
+ 
+    figure.fotos{
+	position:relative;
+	border: 8px solid white;
+	box-shadow: 1px 1px 4px black;
+	width: 700px;
+    margin-left: 110px;
+    margin-bottom: 100px;
+}
+    
+    figure.fotos figcaption h3{
+    padding-top: 150px;
+    font-size: 2rem;
+}
+    .imagens{
+        margin-left: 40px;
+    }
+    
+    .imagens h6{
+        margin-left: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 764px)
+{
+   figure.fotos{
+	position:relative;
+	border: 8px solid white;
+	box-shadow: 1px 1px 4px black;
+	width: 420px;
+    margin-left: 110px;
+    margin-bottom: 100px;
+}
+    
+    figure.fotos figcaption h3{
+    padding-top: 50px;
+    font-size: 1.4rem;
+}
+    .imagens{
+        margin-right: 50px;
+    }
+    
+    .imagens h6{
+        margin-left: 130px;
+    }
+    
+    
+}
 
 
 

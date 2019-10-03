@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="estilo-index.css">
     
     <!--pesquisar como colocar um ícone no título da página -->
-    <title>ícone FrutasJá - Home</title>
+    <link rel="icon" href="imagens/icone_dan/apple-icon.png" type="image/x-icon">
+    <title>FrutasJá - Home</title>
 </head>
 <body id="home">
 <!--Menu-->
@@ -24,6 +25,7 @@
   <a class="navbar-brand col-3 barra-animada" href="#home">FrutasJá</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
     <span class="navbar-toggler-icon"></span>
+    <span class="sr-only"></span> &#9776;
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
@@ -52,7 +54,7 @@
         <i class="fas fa-search pr-1 busca"></i>
       </li>
        <li class="nav-item cadastro">
-        <a class="nav-link log-in ml-2" href="#">Login | Cadastre-se</a>
+        <a class="nav-link log-in ml-2" href="loginJQuery.html">Login | Cadastre-se</a>
       </li>
      
     </ul>
@@ -85,7 +87,7 @@
 	<section class="section-cards mt-5 text-center">
 	   <div class="container">
 	        <div class="row">
-	              <div class="card col-md-3">
+	              <div class="card col-md-5 col-lg-4 col-xl-3">
 	                <img src="imagens/cards-index/melancia.jpg" class="card-img-top">
 	                <div class="card-body">
 	                    <h5 class="card-title">Melancia Vermelha</h5>
@@ -93,56 +95,56 @@
                         <a href="frutas.html"></a>
 	                </div>
                       </div>
-	             <div class="card col-md-3">
+	             <div class="card col-md-5 col-lg-4 col-xl-3">
 	                <img src="imagens/cards-index/tangerina.jpg" class="card-img-top">
 	                <div class="card-body">
 	                    <h5 class="card-title">Mexerica Murcott</h5>
 	                    <h3 class="display-2"><span class="currency">R$</span>14,90<span class="period"> /KG</span></h3>
 	                </div>
 	            </div>
-	             <div class="card col-md-3">
+	             <div class="card col-md-5 col-lg-4 col-xl-3">
 	                <img src="imagens/cards-index/manga.jpg" class="card-img-top">
 	                <div class="card-body">
 	                    <h5 class="card-title">Manga Palmer</h5>
 	                    <h3 class="display-2"><span class="currency">R$</span>20,00<span class="period"> /KG</span></h3>
 	                </div>
 	            </div>
-	             <div class="card col-md-3">
+	             <div class="card col-md-5 col-lg-4 col-xl-3">
 	                <img src="imagens/cards-index/brocolis.jpg" class="card-img-top">
 	                <div class="card-body">
 	                    <h5 class="card-title">Brócolis</h5>
 	                    <h3 class="display-2"><span class="currency">R$</span>19,90<span class="period"> /KG</span></h3>
 	                </div>
 	            </div>
-	             <div class="card col-md-3">
+	             <div class="card col-md-5 col-lg-4 col-xl-3">
 	                <img src="imagens/cards-index/couve-flor.jpg" class="card-img-top">
 	                <div class="card-body">
 	                    <h5 class="card-title">Couve-flor</h5>
 	                    <h3 class="display-2"><span class="currency">R$</span>21,50<span class="period"> /KG</span></h3>
 	                </div>
 	            </div>
-	             <div class="card col-md-3">
+	             <div class="card col-md-5 col-lg-4 col-xl-3">
 	                <img src="imagens/cards-index/alcachofra.jpg" class="card-img-top">
 	                <div class="card-body">
 	                    <h5 class="card-title">Alcachofra</h5>
 	                    <h3 class="display-2"><span class="currency">R$</span>63,50<span class="period"> /KG</span></h3>
 	                </div>
 	            </div>
-	            <div class="card col-md-3">
+	            <div class="card col-md-5 col-lg-4 col-xl-3">
 	                <img src="imagens/cards-index/cenoura.jpg" class="card-img-top">
 	                <div class="card-body">
 	                    <h5 class="card-title">Cenoura</h5>
 	                    <h3 class="display-2"><span class="currency">R$</span>17,90<span class="period"> /KG</span></h3>
 	                </div>
 	            </div>
-	             <div class="card col-md-3">
+	             <div class="card col-md-5 col-lg-4 col-xl-3">
 	                <img src="imagens/cards-index/milho.jpg" class="card-img-top">
 	                <div class="card-body">
 	                    <h5 class="card-title">Milho</h5>
 	                    <h3 class="display-2"><span class="currency">R$</span>0,50<span class="period"> /KG</span></h3>
 	                </div>
 	            </div>
-	             <div class="card col-md-3">
+	             <div class="card col-md-5 col-lg-4 col-xl-3">
 	                <img src="imagens/cards-index/batata.jpg" class="card-img-top">
 	                <div class="card-body">
 	                    <h5 class="card-title">Batata</h5>
@@ -206,7 +208,7 @@
 <!-- Fim Footer-->         
   
 
-            
+<script src="js/jquery-3.3.1.min.js"></script>           
    
 <!--linkando com jQuery-->
 <script
@@ -217,8 +219,8 @@ crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
          
            
-<script src="main.js"></script>                
-<script src="js/jquery-3.3.1.min.js"></script>
+          
+
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.waypoints.min.js"></script>
 <script src="js/jquery.paroller.js"></script>

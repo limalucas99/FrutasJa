@@ -15,11 +15,11 @@
 <!--Menu-->
 <nav class="navbar navbar-default">
    <div class="navbar-header">
-       <a class="navbar-brand col-3" href="#">FrutasJá</a></div></nav><br/><br/>
+       <a class="navbar-brand col-3" href="index.html">FrutasJá</a></div></nav><br/><br/>
    <div class="container text-center" id="input" >
            
       <!--FORMULÁRIO DE LOGIN-->
-        <form method="post" id="JQlogin"action=""> 
+        <form method="post" id="JQlogin" action=""> 
           <h1>Login</h1> 
           <p> 
             <label for="nome_login">Nome:</label>
@@ -66,17 +66,10 @@
                     required: true,
                     minlength: 4
                 },
-                email_login: {
-                    equalTo: "#email"
-                    //verificar se os 2 emails são iguais
-                },
-                senha_login: {equalTo: "#senha1",
-                             equalTo: "#senha2"}
-                
             },
             messages: {
                 nome_login: {
-                    required: "este campo é obrigatório",
+                    required: " este campo é obrigatório",
                     minlength: "No mínimo {0} caracteres"
                     //{0} pega o valor do atributo e substitui ali
                 },
@@ -86,8 +79,7 @@
                 },
                 
                 senha_login: {
-                    require: "É nescessário digitar uma senha.",
-                    equalTo:"Senha não corresponde!"
+                    required: "É necessário digitar uma senha."
                 }
                 }
             }

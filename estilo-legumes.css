@@ -232,5 +232,85 @@ body{
     visibility: hidden;
 }
 
+.navbar-toggler{
+    color: purple;
+}
+
+.navbar-toggler:focus{ 
+    outline-color: white; /*Tirar a merda da cor que fica no hamburguer menu qdo clicam nele*/
+}
+
+@media screen and (max-width: 991px) and (min-width: 766px)
+{
+  .section-cards img{
+    width: 300px;
+    height: 250px;
+   }
+    
+  .card{
+  border: 0;
+  box-shadow: 0 3px 0px 0 rgba(0, 0, 0, .08);
+  transition: all .3s ease-in-out;
+  padding: 2.25rem 0;
+  height: 450px;
+  margin-left: 10px;
+  margin-right: 50px;
+  margin-bottom: 90px;
+  }
+    
+    .card:hover{
+    transform: scale(1);
+    cursor: pointer;
+    }
+    
+}
+
+
+@media screen and (max-width: 1200px) and (min-width: 992px)
+{
+    
+  .section-cards img{
+    width: 319px;
+    height: 250px;
+   }
+
+  .card{
+  border: 0;
+  box-shadow: 0 3px 0px 0 rgba(0, 0, 0, .08);
+  transition: all .3s ease-in-out;
+  padding: 2.25rem 0;
+  height: 450px;
+  margin-left: 100px;
+  margin-right: 50px;
+  margin-bottom: 90px;
+  }
+    
+}
+
+@media screen and (max-width: 764px)
+{
+   .section-cards img{
+    width: 389px;
+    height: 250px;
+   }
+    
+    .card{
+  border: 0;
+  box-shadow: 0 3px 0px 0 rgba(0, 0, 0, .08);
+  transition: all .3s ease-in-out;
+  padding: 2.25rem 0;
+  height: 450px;
+  margin-left: 100px;
+  margin-right: 50px;
+  margin-bottom: 90px;
+  }
+    
+     .card:hover{
+    transform: scale(1);
+    cursor: pointer;
+    }
+    
+}
+
 
 
