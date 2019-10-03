@@ -1,3 +1,6 @@
+body{
+    background-image: url(imagens/smoothie-verde-en-tarro-de-vidrio-con-organicos-frescos-frutas-y-verduras-verdes-sobre-fondo-gris-dieta-primaveral-raw-saludables-vegetarianas-veganas-concepto-detox-desayuno-limpieza-alcalina-.jpg)
+}
 input
 {
     border: 2px solid blue;
@@ -22,3 +25,14 @@ margin-left: 14px;
     text-transform: uppercase;
     font-size: 1.4rem;
     font-weight: bold;}
+
+@media screen and (max-width: 500px) and (min-width: 0px)
+{
+    body{
+        margin: 0px;
+    }
+    #RDSenha{
+        margin: 0px;
+        width: 100%;
+    }
+}
